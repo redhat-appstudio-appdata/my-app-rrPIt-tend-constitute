@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-2qil
+  namespace: rorai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:fafbe93042634a10f1015dda6f9a28700b986099ba2cd18e4f171f9761115704
+        name: my-nodejs
+        resources: {}
+status: {}
