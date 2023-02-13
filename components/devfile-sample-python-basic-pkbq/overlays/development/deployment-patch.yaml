@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-pkbq
+  namespace: rorai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:c2dfbf0309dde81387765b013e7cc2daec73b1ec7be53ae8f3dfe7b5b364084d
+        name: my-python
+        resources: {}
+status: {}
